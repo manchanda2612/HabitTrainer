@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".CreateHabitActivity">
+
+
+    <EditText
+        android:id="@+id/edt_create_habit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/title"
+        android:hint="@string/title"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edt_create_habit_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autofillHints="@string/description"
+        android:hint="@string/description"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_create_habit_fetch_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="chooseImage"
+        android:text="@string/fetch_image" />
+
+    <ImageView
+        android:id="@+id/img_create_habit"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/habit_icon" />
+
+    <Button
+        android:id="@+id/btn_create_habit_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="saveData"
+        android:text="@string/save" />
+
+
+    <TextView
+        android:id="@+id/txv_create_habit_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        />
+
+</LinearLayout>
